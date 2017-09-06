@@ -32,8 +32,7 @@ public class DefaultInspectionPort implements InspectionPortElement {
     public DefaultInspectionPort() {
     }
 
-    public DefaultInspectionPort(String elementId, String parentId, NetworkElement ingressPort,
-            NetworkElement egressPort) {
+    public DefaultInspectionPort(NetworkElement ingressPort, NetworkElement egressPort, String elementId, String parentId) {
         this.ingressPort = ingressPort;
         this.egressPort = egressPort;
         this.element = new ElementImpl(elementId, parentId);
